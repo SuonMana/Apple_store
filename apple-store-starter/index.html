@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  
+
+  <section class="filter-container">
+    <form class="search-form">
+      <input type="text" placeholder="type a name...." id="search-item">
+      <select name="productType" id="productType">
+        <option selected>Sorted by</option>
+        <option value="name">Name</option>
+        <option value="lower_price">Lower Price</option>
+        <option value="higher_price">Higher Price</option>
+      </select>
+    </form>
+    
+
+    <div class="categories">
+      <button data-id="all">All</button>
+      <button data-id="iphone">iPhone</button>
+      <button data-id="ipad">iPad</button>
+      <button data-id="imac">iMac</button>
+      <button data-id="macbook">Macbook</button>
+    </div>
+  </section>
+
+
+  <section id="products">
+    <h2 class="section-title">Products</h2>
+
+    <div class="products-container">
+      
+      <div class="product">
+        <img src="./images/ipad.jpeg" alt="">
+        <h4>Ipad</h4>
+        <h2>$999</h2>
+        <button>Detail</button>
+        <ion-icon name="cart"></ion-icon>
+      </div>
+
+      
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <script type="module" src="./src/pages/index.js"></script>
+</body>
+</html>
